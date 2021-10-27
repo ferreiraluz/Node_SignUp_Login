@@ -1,0 +1,77 @@
+<!-- Login -->
+<main>
+    <h2> Faça Login! </h2>
+    <form action="/login" method="post">
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <input type="submit" value="Enviar" class="button">
+    </form>
+</main>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body{
+        background-color: #420a42;
+        color: white;
+    }
+
+    main{
+        max-width: 650px;
+        margin: auto;
+
+        text-align: center;
+
+        margin-top: 8px;
+    }
+
+    form{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 200px;
+        width: 95%;
+        border-radius: 8rem;
+        border: 0;
+        background-color: white;
+    }
+
+    input{
+        max-width: 800px;
+        border: .5 rgba(0, 0, 0, 0.397);
+        border-radius: .4rem;
+        
+        text-align: center;
+
+        margin: auto;
+        margin-top: 15px;
+
+        height: 25px;
+        width: 50%;
+
+    }
+
+    .button{
+        width: 125px;
+        padding: 20px;
+        border-radius: 2rem 1.8rem 1.5rem 1.9rem;
+        background-color: blueviolet;
+        color: white;
+
+        cursor: pointer;
+
+        height: 80px;
+        transition: .4s;
+    }
+
+    .button:hover{
+        background-color: rgb(152, 108, 192);
+    }
+</style>
